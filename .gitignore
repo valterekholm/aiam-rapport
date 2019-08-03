@@ -1,0 +1,8 @@
+.git_1/
+.idea/
+application/config/config.php
+application/config/database.php
+*.xlsx
+*.pdf
+#this is for xhtml2pdf
+application/models/*.html

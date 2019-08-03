@@ -1,0 +1,593 @@
+html {
+    margin: 0;
+    /*width: 100%;*/
+    font-size: 19px;
+    height: 100%;
+    min-width: 100%;
+	box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3{
+    font-family: "Lucida Console", Monaco, monospace;
+}
+fieldset{
+    padding: 7px 10px;
+}
+table, td{
+    border-top: 1px solid rbga(0,0,0,.5);
+    border-right: 1px dotted #555;
+}
+
+th{
+    background: #eb5;
+}
+
+table{
+	font-family: "Lucida console";
+	font-size: 0.9em;
+	margin: 20px;
+}
+tr,td{
+border: 1px solid gray;
+}
+th,td{
+padding: 10px;
+}
+tr{
+	background: rgba(233,247,230,.5);
+}
+tr:nth-child(even) {background: #ddd}
+
+th{
+    padding: 2px 7px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgb(3,87,158);
+    outline-color: rgb(20,80,75);
+}
+a:hover{
+	color: rgb(100,0,0);
+}
+a:visited{
+	rgb(3,87,158);
+}
+
+.pagetop{
+	margin: -10px;
+	background-color: rgba(9,113,98,.3);
+	padding: 10px 10px 0 10px;
+	color: #222;
+}
+
+.headline{
+	font-family: "Lucida Console", Monaco, monospace;
+}
+.headline2{
+}
+
+label{
+    font-weight: bold;
+    font-family: Arial;
+    /*text-align: right;*/
+}
+
+input[type="checkbox"]{
+	width: 25px;
+	height: 25px;
+	border-radius: 3px;
+}
+
+ul{
+	list-style-type: initial;
+}
+
+ul.menu{
+	display: inline-block;
+	width: 150px;
+}
+
+p.open_report{
+	display: inline-block;
+	font-style: italic;
+	margin-left: 10px;
+	background: rgba(255,255,255,.6);
+	padding: 0 5px;
+}
+
+
+span.username_logout{
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+span.headline_right{
+	float:right;
+	margin: 19px 0 19px 19px;
+}
+
+.jobb_rapport{
+/*    background: white;
+    background: -webkit-linear-gradient(#FF9B9B, white);
+    background: -o-linear-gradient(#FF9B9B, white);
+    background: -moz-linear-gradient(#FF9B9B, white);
+    background: linear-gradient(#FF9B9B, white);
+    background-repeat: no-repeat;*/
+    margin: 0;
+}
+
+/*To make gradient fill full width of page*/
+div#content{
+	background: linear-gradient(#FF9B9B, white);
+	overflow: auto;
+	height: 100%;
+	padding: 10px;
+}
+
+div#content form label{
+	width: 180px;
+	display: inline-block;
+}
+div#content input, div#content select, div#content textarea{
+	margin: 7px;
+}
+div#content input[type="text"], div#content input[type="number"], div#content input[type="password"], div#content select, div#content textarea{
+	width: 13em;
+	font-size: 0.95em;
+	padding: 2px 4px;
+}
+div#content form select{
+	width: 11.74em;
+}
+
+div#content form input[type="submit"]{
+	padding: 7px;
+	/*font-size: 0.8em;*/
+	font-weight: bold;
+}
+
+div#content textarea{
+	width: 300px;
+	height: 200px;
+	vertical-align: middle;
+}
+
+#content fieldset{
+	border-radius: 10px;
+	border-color: lightcyan;
+	border-width: 0;
+	background: rgba(100,60,49,.3);
+	padding: 7px 20px;
+	margin: 0 5%;
+}
+
+#content fieldset legend{
+	background: rgba(255,255,255,.7);
+	border-radius: 2px;
+	color: #333;
+	padding: 1px 5px;
+	margin: 0 auto;
+}
+
+#content fieldset h3{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.partment{
+	display: inline-block;
+	width: 415px;
+	min-height: 200px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px;
+	margin: 2%;
+	padding: 20px;
+	vertical-align: top;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.footer{
+	font-family: monospace;
+}
+
+p.message{
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+
+
+
+.ilb{/*(i)n(l)ine(b)lock*/
+    display: inline-block;
+}
+.border1{
+    border: 1px solid gray;
+}
+.question{
+    background-image: url("question-mark-sign.png");
+    background-repeat: no-repeat;
+    padding: 0 8px;
+    font-size: 17px;
+}
+
+.stamp_in, .stamp_out, .stamp_break{
+    width: 75%;
+    font-family: Arial;
+    font-weight: bold !important;
+    font-size: 20px;
+    padding: 10px !important;
+    margin: 10px auto !important;
+    display: block;
+}
+.stamp_in{
+    background-color: orange;
+}
+.stamp_out{
+    background-color: green;
+}
+.stamp_break{
+	background-color: LightGray;
+}
+
+/*For a swapable form */
+div.swappable-forms form:first-child{
+	display:none;/*the one hidden*/
+}
+
+.excel_btn_link{
+    display: inline-block;
+    width: 280px;
+    height: 20px
+}
+.excel_btn_link::before{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    content: url("excel_icon.png");
+    text-decoration: none;
+}
+
+.form_holder{
+    /*mobile-*/
+    font-size: 20px;
+    width: 100%;
+}
+.form_holder form{
+    margin: 5px;
+    padding: 10px;
+}
+.form_holder input{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.form_holder input[type=text],.form_holder input[type=password], .form_holder select, form_select textarea{
+    width: 220px;
+    padding: 3px;
+}
+.form_holder input[type=button], .form_holder input[type=submit]{
+    padding: 4px 10px;
+    margin: 0 10px;
+}
+.form_holder input[type=submit] {
+    /*width: 117px;*/
+    margin: 0 auto;
+}
+.form_holder label{
+    width: 220px;
+    display: inline-block
+}
+
+.form_holder ul{
+	list-style-type: none;
+}
+
+.date-field{
+	width: 105px;
+}
+.bottom_links{
+    padding: 10px;
+}
+.bottom_links a{
+    padding: 3px 20px;
+    display: inline-block;
+}
+
+.button_like{
+    
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+}
+.button_like a{
+    border: 1px outset #989;
+    border-radius: 3px;
+    background: lightgray;
+    background-color: rgba(0,0,0,.1);
+    padding: 9px 10px 8px;
+    text-decoration: none;
+    color: #FF3700;
+    font-family: 'Courier New';
+}
+.button_like a:active{
+    border: 2px inset #989;
+    color: #933700;
+    padding: 9px 9px 8px;
+}
+.button_like a:hover{
+    background: #ddd;
+    background-color: rgba(50,50,50,.1);
+    color: #D18362;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.mini_gray_text{
+	color: rgba(0,0,0,.3);
+	font-size: .5em;
+}
+
+.inline{
+    display: inline;
+}
+.w350p{
+    width:  350px;
+}
+.w700p{
+    width: 700px !important;
+}
+.inline_info{
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    vertical-align: top;
+    padding: 10px 0;
+    word-wrap: break-word;
+
+}
+.inline_info label{
+    margin: 0 20px 0 0;
+}
+.inline_info input[type=submit]{
+    /*margin: 15px auto;*/
+}
+
+.diffuse_underline{
+    border-bottom: 1px dotted #555;
+}
+
+.padded1{/*aimed at body-element*/
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.related_post{
+    border: 1px solid gray;
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    vertical-align: top;
+}
+.related_post h1,.related_post h2,.related_post h3{
+    margin-top: .3em;
+}
+
+.datapage{
+
+}
+
+.datapage tr{
+}
+
+.datapage td{
+/*	display: block;*/
+}
+
+.vague{
+    font-weight: 100;
+    color: gray;
+    display: inline-block;
+}
+
+.inner_shadow {
+   -moz-box-shadow:    inset 0 0 10px #550000;
+   -webkit-box-shadow: inset 0 0 10px #550000;
+   box-shadow:         inset 0 0 10px #550000;
+}
+
+.calendar_nav{
+
+    border: 2px outset gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px;
+    
+}
+.calendar_nav div{
+    display: inline-block;
+    padding: 3px 15px;
+    vertical-align: middle;
+    border: 1px outset gray;
+    border-radius: 4px;
+}
+
+
+/*jobs/calendar*/
+
+div.calendar{
+}
+
+div.calendar table{
+	border-collapse:collapse;
+}
+
+div.calendar table caption{
+	border-width: 2px 1px 0 1px;
+	border-style: solid;
+	border-color: #a87;
+	background: #daa;
+	font-style: italic;
+}
+
+caption a{
+	float:right;
+	border: 1px dotted maroon;
+	width: 40px;
+	border-width: 0 1px;
+	padding: 5px 3px;
+}
+
+caption a:first-child{
+	float: left;
+}
+
+caption span{
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.calendar td{
+	padding: 1px 10px;
+}
+
+.related_post .calendar td{
+	padding: 1px 7px;
+}
+
+.calendar td.booked{
+	background-color: #A5A561;
+	cursor: pointer;
+}
+.calendar td.booked:hover{
+	box-shadow: 1px 1px 10px #1133aa;
+}
+.calendar td.booked2{
+	background-color: #7C7C49;
+	cursor: pointer;
+}
+.calendar td.booked2:hover{
+	box-shadow: 1px 1px 10px #1133aa;
+}
+.calendar td.booked3{
+	background-color: #535331;
+	cursor: pointer;
+}
+.calendar td.booked3:hover{
+	box-shadow: 1px 1px 10px #1133aa;
+}
+.calendar td.booked4{
+	background-color: #292918;
+	cursor: pointer;
+}
+.calendar td.booked4:hover{
+	box-shadow: 1px 1px 10px #1133aa;
+}
+.calendar td.booked5, .booked6, .booked7, .booked8, .booked9, .booked10, .booked11{
+	background-color: #000;
+	cursor: pointer;
+}
+.calendar td.booked5:hover{
+	box-shadow: 1px 1px 10px #1133aa;
+}
+
+.calendar td.scheduled{
+	background-color: #447799;
+}
+
+
+
+.calendar td span{
+	display: none;
+}
+
+td.hasEvent{
+	background: mediumturquoise;
+}
+
+td.originEvent{
+	background-color: #A5A561;
+}
+
+
+.info_block{
+	position: fixed;
+	width: 95%;/*65*/
+	height: 0%;
+	padding: 20px;
+	background: white;
+	bottom: 10px;
+	left: 2%;/*17*/
+	font-weight: bold;
+	opacity: 0;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-delay: .1s;
+	transition-timing-function: linear;
+	z-index:10;
+}
+
+.info_block.showing{
+	opacity: 1;
+	height: 90%;/*30*/
+}
+/* intended to be a blocking screen behind info-block, but covered block as well
+.info_block.showing:before{
+	display: block;
+	content: "hej";
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	top:0;
+	left:0;
+	z-index: -10;
+}*/
+
+.closeBtnDiv{
+	position: absolute;
+	top: 10px;
+	right: 10px
+}
+/*end calendar*/
+
+#JR_INFO_BLOCK{
+	background-color: rgba(255,255,255,1);
+	opacity:1;
+	filter: alpha(opacity=100);
+	font-weight: bold;
+	font-family: "Lucida Console", Monaco, monospace;
+	padding: 5px;
+
+}
+#JR_INFO_BLOCK.variant{
+	-webkit-transition: all 0.6s; /* Safari */
+	-ms-transition: all 0.6s;
+	transition: all 0.6s;
+	background-color: rgba(255,255,255,.1);
+	opacity:.2;
+	filter: alpha(opacity=20);
+
+}
+td.selected{
+	background: #2BC484;
+}

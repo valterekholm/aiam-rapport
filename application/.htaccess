@@ -1,0 +1,23 @@
+<IfModule authz_core_module>
+    Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
+
+#   <IfModule mod_rewrite.c>
+#        # Make sure directory listing is disabled
+#        Options +FollowSymLinks -Indexes
+#        # disable the Apache MultiViews directive if it is enabled on the server. It plays havoc  with URL rewriting
+#        Options -MultiViews
+#        RewriteEngine on
+#
+#        <IfModule mod_php5.c>
+#            RewriteRule ^(.*)$ index.php/$1 [L]
+#        </IfModule>
+#
+#        <IfModule !mod_php5.c>
+#            RewriteRule ^(.*)$ index.php?/$1 [L]
+#        </IfModule>
+#
+#    </IfModule>

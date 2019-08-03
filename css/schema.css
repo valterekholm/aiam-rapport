@@ -1,0 +1,10 @@
+#weekDaysArea p{
+	display: inline-block;
+}
+#weekDaysArea input[type="checkbox"]{
+	vertical-align: sub;
+}
+
+.hasEvent{
+	background: mediumturquoise;
+}
