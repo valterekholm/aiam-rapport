@@ -1,0 +1,26 @@
+Aiam-rapport domän på webben. KLAR men fungerar inte
+
+På sidor där man kan "lägga till" t.ex. val av arbetsplats (för nytt arbetstillfälle) eller ny arbetsplats, så ska formulär komma direkt på samma sida.
+
+KLAR för workplace/create.php
+
+pdf med tidsrapport ska innehålla summering, ska vara snyggare, ska ha timmar resp. minuter.
+
+Excel med tidsrapport ska ha timmar resp. minuter (eller kombinerat fält).
+
+en ny tabell (rapportprofiler) ska ha gränser för när en in-/utstämpling godkänns i förhållande (avstånd o tid) till arbetstillfälle.
+
+"Link table" ska åtminstone ha en title (vid mouse over) beskrivandes dess funktion. KLAR
+
+På workplaces edit fixa kartan. KLAR
+
+Ha en fast ikon-knapp i toppen av sidan för kalendern. KLAR
+
+Ta bort id-fält för workplaces edit. KLAR
+
+Genererad pdf blir föregående pdf...
+(prova med unikt namn, inkl namn-person datum-tid)
+
+Kalender, nya kalender skrev ut samma händelse två ggr.
+
+Även: fixa karta på workplaces create KLAR
